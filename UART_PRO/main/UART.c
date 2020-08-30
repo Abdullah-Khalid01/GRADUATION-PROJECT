@@ -6,7 +6,8 @@
  */ 
 
 #include "UART.h"
-
+#define F_CPU 16000000
+#include <util/delay.h>
 void UART_INIT(void)
 {
 	uint32 BR_VALUE =0; 
@@ -39,4 +40,17 @@ void UART_SendByte(uint8 data)
 	
 	UDR =data;
 	
+}
+
+uint8* UART_Receive_String(void)
+{
+	uint8 i=0;
+static uint8 data[50]={'0'};
+	while (data[i]!='\0')
+	{
+		data[i]=UART_Recieve_Byte();
+	//	_delay_ms(500);
+		i++;
+	}
+	return data;
 }

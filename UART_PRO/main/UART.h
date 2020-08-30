@@ -25,4 +25,6 @@ uint8 UART_Recieve_Byte(void);
 
 void UART_SendByte(uint8 data);
 
+uint8* UART_Receive_String(void);
+
 #endif /* UART_H_ */

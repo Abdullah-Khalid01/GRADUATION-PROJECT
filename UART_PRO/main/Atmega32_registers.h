@@ -43,7 +43,7 @@
 #define ADC_ADJUST (*(volatile uint16*)(0x24))
 #define SFIOR      (*(volatile uint8*)(0x50))
 
-/****************************************** TIMER REGISTERS **********************************************/
+/****************************************** TIMER0 REGISTERS **********************************************/
 #define TCNT0      (*(volatile uint8*)(0x52))
 #define TCCR0      (*(volatile uint8*)(0x53))
 #define OCR0       (*(volatile uint8*)(0x5C))
@@ -59,7 +59,15 @@
 #define UCSRC      (*(volatile uint8*)(0x40))
 #define UDR        (*(volatile uint8*)(0x2C))
 
-/****************************************** SPI REGISTERS ***********************************************/
+/******************************************* TIMER1 REGISTERS ********************************************/
+#define TCCR1A      (*(volatile uint8*)(0x4F))
+#define TCCR1B      (*(volatile uint8*)(0x4E))
+#define TCNT1L      (*(volatile uint16*)(0x4C))
+#define OCR1A       (*(volatile uint16*)(0x4A))
+#define ICR1        (*(volatile uint16*)(0x46))
+
+
+/****************************************** SPI REGISTERS ************************************************/
 
 typedef struct  
 {

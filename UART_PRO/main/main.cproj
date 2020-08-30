@@ -73,6 +73,12 @@
     <Compile Include="Bit_Math.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="DC_MOTOR.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DC_MOTOR.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="DIO.c">
       <SubType>compile</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Servo.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Servo.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="SPI.c">
       <SubType>compile</SubType>
     </Compile>
@@ -104,6 +116,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="STD-typdef1.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Timer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Timer.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="UART.c">

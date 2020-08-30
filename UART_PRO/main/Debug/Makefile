@@ -39,6 +39,9 @@ C_SRCS +=  \
 ../LCD.c \
 ../LED.c \
 ../main.c \
+../Servo.c \
+../SPI.c \
+../Timer.c \
 ../UART.c
 
 
@@ -53,6 +56,9 @@ DIO.o \
 LCD.o \
 LED.o \
 main.o \
+Servo.o \
+SPI.o \
+Timer.o \
 UART.o
 
 
@@ -61,6 +67,9 @@ DIO.o \
 LCD.o \
 LED.o \
 main.o \
+Servo.o \
+SPI.o \
+Timer.o \
 UART.o
 
 
@@ -69,6 +78,9 @@ DIO.d \
 LCD.d \
 LED.d \
 main.d \
+Servo.d \
+SPI.d \
+Timer.d \
 UART.d
 
 
@@ -77,6 +89,9 @@ DIO.d \
 LCD.d \
 LED.d \
 main.d \
+Servo.d \
+SPI.d \
+Timer.d \
 UART.d
 
 
@@ -89,6 +104,12 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
 
 
 

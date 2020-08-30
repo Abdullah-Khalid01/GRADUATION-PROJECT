@@ -35,10 +35,13 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../DC_MOTOR.c \
 ../DIO.c \
 ../LED.c \
 ../main.c \
-../SPI.c
+../Servo.c \
+../SPI.c \
+../Timer.c
 
 
 PREPROCESSING_SRCS += 
@@ -48,31 +51,43 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+DC_MOTOR.o \
 DIO.o \
 LED.o \
 main.o \
-SPI.o
+Servo.o \
+SPI.o \
+Timer.o
 
 
 OBJS_AS_ARGS +=  \
+DC_MOTOR.o \
 DIO.o \
 LED.o \
 main.o \
-SPI.o
+Servo.o \
+SPI.o \
+Timer.o
 
 
 C_DEPS +=  \
+DC_MOTOR.d \
 DIO.d \
 LED.d \
 main.d \
-SPI.d
+Servo.d \
+SPI.d \
+Timer.d
 
 
 C_DEPS_AS_ARGS +=  \
+DC_MOTOR.d \
 DIO.d \
 LED.d \
 main.d \
-SPI.d
+Servo.d \
+SPI.d \
+Timer.d
 
 
 OUTPUT_FILE_PATH +=main.elf
@@ -84,6 +99,12 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
 
 
 
